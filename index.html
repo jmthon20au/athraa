@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى نور عيني وروح قلبي عذراء - من علي (ذكرى البداية)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* ------------------------------------- */
+        /* CSS للتصميم والجمالية والـ Responsive */
+        /* ------------------------------------- */
+        :root {
+            --primary-color: #8B0000; /* لون أحمر غامق ملكي */
+            --secondary-color: #FF69B4; /* وردي ساخن للقلوب المتوهجة */
+            --background-light: #FDF5E6; /* خلفية بيج ناعم (Old Lace) */
+            --text-dark: #36454F; /* رمادي فحم للنصوص */
+            --font-main: 'Amiri', serif;
+            --font-header: 'Scheherazade New', serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            line-height: 1.8;
+            overflow-x: hidden;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="%23FFC0CB" opacity="0.4" /></svg>'); /* نقش خفيف */
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* -------------------- الهيدر والأسماء -------------------- */
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 20px 20px;
+            border-radius: 0 0 70px 70px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        header h1 {
+            font-family: var(--font-header);
+            font-size: 3em;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px #A0303A;
+        }
+        
+        /* -------------------- ذكرى البداية -------------------- */
+        .date-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: var(--text-dark);
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid var(--secondary-color);
+            margin: 20px auto;
+            width: fit-content;
+            font-size: 1.1em;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .date-box span {
+            display: block;
+            margin: 5px 0;
+        }
+
+        .date-box .label {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+
+        /* -------------------- مقطع الصورة -------------------- */
+        .image-section {
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .photo-frame {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%; /* لجعلها دائرية */
+            overflow: hidden;
+            border: 8px solid white;
+            box-shadow: 0 0 0 5px var(--secondary-color), 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .love-line {
+            color: var(--primary-color);
+            font-size: 4em;
+            margin: 0 20px;
+            animation: glow 1.5s infinite alternate;
+        }
+        
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px var(--secondary-color); }
+            100% { text-shadow: 0 0 20px var(--secondary-color), 0 0 30px var(--secondary-color); }
+        }
+
+        /* -------------------- محتوى الغزل -------------------- */
+        .greetings-card {
+            background-color: white;
+            padding: 40px;
+            margin: 30px 0;
+            border-radius: 25px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            border-right: 5px solid var(--primary-color);
+            text-align: justify;
+            transition: all 0.5s ease;
+        }
+        
+        .greetings-card:hover {
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .greetings-card p {
+            font-size: 1.3em;
+            margin-bottom: 25px;
+        }
+        
+        .greetings-card strong {
+            color: var(--primary-color);
+            font-weight: 900;
+        }
+
+        /* -------------------- التوقيع والختام -------------------- */
+        footer {
+            padding: 30px;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 70px 70px 0 0;
+            margin-top: 50px;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            font-style: italic;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        /* -------------------- Responsive (التجاوبية) -------------------- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            .names {
+                font-size: 1.4em;
+            }
+            .image-section {
+                flex-direction: column;
+            }
+            .love-line {
+                font-size: 3em;
+                margin: 10px 0;
+                transform: rotate(90deg); /* تدوير القلب ليصبح عمودياً على الموبايل */
+            }
+            .photo-frame {
+                width: 200px;
+                height: 200px;
+            }
+            .greetings-card p {
+                font-size: 1.1em;
+            }
+        }
+        
+        /* -------------------- مؤثرات القلوب الطائرة (Falling Hearts) -------------------- */
+        .heart {
+            position: fixed; /* لتغطية الشاشة بأكملها */
+            width: 12px;
+            height: 12px;
+            background-color: var(--primary-color);
+            transform: rotate(-45deg);
+            z-index: -1; 
+            animation: fall linear infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+        }
+
+        .heart::before {
+            top: -6px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 6px;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-10vh) rotate(-45deg); opacity: 0.8; }
+            100% { transform: translateY(110vh) rotate(-45deg); opacity: 0.2; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌹 رسالة حب خالدة لعذراء 🌹</h1>
+        
+        <div class="date-box">
+            <span class="label">ذكرى بدايتنا:</span>
+            <span>الخميس</span>
+            <span>١٩- جمادى الآخرة - ١٤٤٧هـ</span>
+            <span>2025/12/11</span>
+            <span style="font-size:0.9em; opacity:0.8;">في تمام 07:42 مساءً</span>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section class="image-section">
+            <div class="photo-frame">
+                <img id="ali-photo" src="ali.webp" alt="صورة علي">
+            </div>
+
+            <span class="love-line"><i class="fas fa-heart"></i></span>
+
+            <div class="photo-frame">
+                <img id="azraa-photo" src="athraa.jpg" alt="صورة عذراء">
+            </div>
+        </section>
+
+        <section class="greetings-card">
+            <h2 style="color: var(--primary-color); margin-top: 0; font-size: 1.8em;">ميثاق الحب والوعد الأبدي</h2>
+            <p>
+                <strong>عذراء روحي وتاج رأسي،</strong> في مثل هذا اليوم، يوم **الخميس**، الموافق 2025/12/11، ولدت قصة لم تكن مجرد صدفة، بل كانت قدر كتبه الله لتلتقي روحي بروحك. هذا اليوم هو نقطة تحول أضاءت حياتي، ومنذ تلك اللحظة وأنا أُحصي الأيام التي ستقربنا إلى عشنا الأبدي.
+            </p>
+            <p>
+                أنتِ الأثر الأجمل في حياتي، والهدوء الذي يسكن ضجيج العالم. أرى في عينيكِ مستقبلي كله، وأُدرك أن كل تفصيلة في حياتنا مقدر لها أن تكون مميزة، لأنكِ أنتِ المميزة. أنا لستُ مجرد حبيب، بل أنا رجلك الذي سيحتويكِ ويسعدكِ ما دامت روحي في جسدي.
+            </p>
+            <p>
+                يا وردتي الجورية، أنتِ لستِ مجرد خطيبة اليوم، بل أنتِ زوجتي المستقبلية، و**أم أطفالي**، وسر سعادتي. وكل ما أتمناه أن تبقى قلوبنا نابضة بصدق هذا الحب الذي بدأ في ذلك المساء.
+            </p>
+            <p style="text-align: center; font-size: 1.6em; color: var(--primary-color);">
+                **يا عذراء، قلبي ينبض باسمك... أحبك جداً.**
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>
+            **أُقسم لكِ بالوفاء حتى المشيب... حبيبك علي** <i class="fas fa-hand-holding-heart"></i>
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const body = document.body;
+            const numHearts = 30;
+
+            function createHeart() {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                
+                // تحديد موقع القلب عشوائياً (على عرض الشاشة)
+                heart.style.left = `${Math.random() * 100}vw`;
+                
+                // تحديد سرعة وزمن سقوط القلب عشوائياً
+                heart.style.animationDuration = `${Math.random() * 3 + 5}s`; // بين 5 و 8 ثواني
+                heart.style.animationDelay = `-${Math.random() * 5}s`; // لبدء بعضها من البداية
+                
+                body.appendChild(heart);
+
+                // إزالة القلب بعد انتهاء الأنميشن
+                setTimeout(() => {
+                    heart.remove();
+                }, 8000);
+            }
+
+            // إنشاء عدد من القلوب عند التحميل
+            for (let i = 0; i < 20; i++) {
+                createHeart();
+            }
+
+            // إنشاء القلوب بشكل مستمر
+            setInterval(createHeart, 400); // إنشاء قلب جديد كل 400 ميلي ثانية
+        });
+    </script>
+
+</body>
+</html>
